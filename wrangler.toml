@@ -1,0 +1,16 @@
+name = "pmbot"
+main = "src/index.ts"
+compatibility_date = "2024-11-01"
+compatibility_flags = ["nodejs_compat"]
+
+[ai]
+binding = "AI"
+
+[[kv_namespaces]]
+binding = "KV"
+id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+preview_id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+
+# Optional: Set better AI keys via `wrangler secret put OPENAI_API_KEY`
+# or `wrangler secret put ANTHROPIC_API_KEY`
+# Workers AI (llama-3.3-70b) is used by default if no key is provided.
